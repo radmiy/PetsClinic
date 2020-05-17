@@ -30,6 +30,8 @@ import java.math.BigDecimal;
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication {
 	public static void main(String[] args) {
+        BigDecimal myDec = new BigDecimal(1.1);
 		SpringApplication.run(PetClinicApplication.class, args);
+        System.out.println(myDec);
 	}
 }
