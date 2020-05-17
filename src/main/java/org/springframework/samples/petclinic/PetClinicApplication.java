@@ -32,6 +32,6 @@ public class PetClinicApplication {
 	public static void main(String[] args) {
         BigDecimal myDec = BigDecimal.ONE;
 		SpringApplication.run(PetClinicApplication.class, args);
-        System.out.println(myDec);
+        System.out.println("My = " + myDec);
 	}
 }
