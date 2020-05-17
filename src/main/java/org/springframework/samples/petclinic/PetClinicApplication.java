@@ -19,6 +19,8 @@ package org.springframework.samples.petclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.math.BigDecimal;
+
 /**
  * PetClinic Spring Boot Application.
  *
@@ -28,8 +30,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication {
 	public static void main(String[] args) {
-
+        BigDecimal myDec = new BigDecimal(1.1);
 		SpringApplication.run(PetClinicApplication.class, args);
-
+        System.out.println(myDec);
 	}
 }
